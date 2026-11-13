@@ -1,0 +1,13 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<canvas id="myChart"></canvas> 
+<script> 
+new Chart(document.getElementById("myChart"), { 
+  type: "line", 
+  data: { 
+    labels: ["週一", "週二", "週三", "週四", "週五", "週六", "週日"], 
+    datasets: [{ label: "氣溫   18_葉哲婷", data: [24,27,22,17,28,26,23], 
+      backgroundColor: "#FF3333", borderColor: "#FF3333"}] 
+  }, 
+  options: { responsive: true, scales: { y: { beginAtZero: true } } } 
+}); 
+</script> 
